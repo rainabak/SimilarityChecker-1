@@ -2,30 +2,27 @@
 #include <vector>
 #include <string>
 
-class StringLenthAlpha {
+class StringLengthAlphabet {
 public:
 	int length(const std::string& str) {
 		return str.length();
 	}
 
 	int getScore(const std::vector<std::string>& wordVec) {
-		int score = 0;
+		int score = 0;   
 		int len1 = length(wordVec[0]);
 		int len2 = length(wordVec[1]);
 		if (len1 == len2) {
 			score = 60;
 		}
 		else {
-			int min = 0, max = 0;
-			// 2배 이상이면 0점
+			int min = len1, max = len2;
 			if (len1 > len2)	min = len2, max = len1;
-			else  min = len1, max = len2;
 
-			if (max / min >= 2) {
-				score = 0;
-			}
+			if (max >=  min * 2) {	score = 0;	}
 			else {
-				score = (1 - (max - min) / min) * 60;
+				int gap = max - min;
+				score = (int)((1.0 - (gap*1.0) / (min * 1.0)) * 60);				
 			}
 		}
 		return score;
