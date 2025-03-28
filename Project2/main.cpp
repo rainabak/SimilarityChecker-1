@@ -14,9 +14,9 @@ TEST(TS, TC2) {
 
 TEST(TS, TC3) {
 	int x = 20;
-	EXPECT_THAT(x, Gt(25));
-	EXPECT_THAT(x, Lt(35));
-	EXPECT_THAT(x, Ne(31));
+	EXPECT_THAT(x, Gt(25)) << "25보다 커야 함.";
+	EXPECT_THAT(x, Lt(35)) << "35보다 작아야 함.";
+	EXPECT_THAT(x, Ne(31)) << "31이면 안됨.";
 }
 
 int main() {
