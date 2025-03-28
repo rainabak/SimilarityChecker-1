@@ -4,12 +4,12 @@
 
 #include <iostream>
 #include <gmock/gmock.h>
-#include "StringLenthAlpha.cpp"
+#include "StringLengthAlphabet.cpp"
 
 using namespace testing;
 
 TEST(StringLengthTest, ¾ËÆÄºª°Ë»ç) {
-	StringLenthAlpha app;
+	StringLengthAlphabet app;
 	std::vector<std::vector<std::string>> wordVec = { {"ASD", "DSA"}, {"A", "BB"}, {"AAABB", "BAA"}, {"AA", "AAE"} };
 	std::vector<int>wordLenVec = { 40, 0, 40, 40 };
 	for (int i = 0; i < wordVec.size(); i++) {

@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-class StringLenthAlpha {
+class StringLengthAlphabet {
 public:
 	int length(const std::string& str) {
 		return str.length();
@@ -30,7 +30,7 @@ public:
 	}
 
 	bool isValidAlphabet(char input) {
-		if (((input >= 'a' && input <= 'z') || (input >= 'A' && input <= 'Z'))) return true;
+		if (input >= 'A' && input <= 'Z') return true;
 		return false;
 	}
 };
