@@ -128,7 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="split_and_sum.cpp" />
+    <ClCompile Include="stringLenAlpha.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
