@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-class StringLength {
+class StringLenthAlpha {
 public:
 	int length(const std::string& str) {
 		return str.length();
@@ -13,7 +13,7 @@ public:
 		int len1 = length(wordVec[0]);
 		int len2 = length(wordVec[1]);
 		if (len1 == len2) {
-			score += 60;
+			score = 60;
 		}
 		else {
 			int min = 0, max = 0;
@@ -22,10 +22,10 @@ public:
 			else  min = len1, max = len2;
 
 			if (max / min >= 2) {
-				score += 0;
+				score = 0;
 			}
 			else {
-				score += max - min;
+				score = (1 - (max - min) / min) * 60;
 			}
 		}
 		return score;
