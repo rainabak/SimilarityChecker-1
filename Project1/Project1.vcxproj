@@ -129,7 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="stringLengthAlphabet.cpp" />
+    <ClCompile Include="StringLengthAlphabet.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
