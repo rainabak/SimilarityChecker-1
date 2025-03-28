@@ -12,6 +12,13 @@ TEST(TS, TC2) {
 	EXPECT_THAT(x, Ne(100));
 }
 
+TEST(TS, TC3) {
+	int x = 20;
+	EXPECT_THAT(x, Gt(25));
+	EXPECT_THAT(x, Lt(35));
+	EXPECT_THAT(x, Ne(31));
+}
+
 int main() {
 	InitGoogleMock();
 	return RUN_ALL_TESTS();
