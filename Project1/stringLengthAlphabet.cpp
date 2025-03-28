@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <string>
 
@@ -8,6 +8,7 @@ public:
 		return str.length();
 	}
 
+	// 한글 깨지나???
 	int getScore(const std::vector<std::string>& wordVec) {
 		int len1 = length(wordVec[0]);
 		int len2 = length(wordVec[1]);
